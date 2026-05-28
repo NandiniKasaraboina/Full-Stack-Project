@@ -11,7 +11,9 @@ const authMiddleware = require('./middleware/authMiddleware');
 const userRoutes=require('./routes/userRoutes')
 const authRoutes = require('./routes/authRoutes');
 const app = express();  //create a backend application(app = backend server)
-app.use(cors());
+app.use(cors({
+    origin: "*"
+}));
 connectDB();
 
 app.use(express.json()); // to understand json data
