@@ -22,7 +22,7 @@ function Signup() {
 
       const response = await axios.post(
 
-        "http://localhost:5000/users",
+        "https://full-stack-project-7236.onrender.com/users",
 
         {
           name,

@@ -25,7 +25,7 @@ function Dashboard() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/users"
+        "https://full-stack-project-7236.onrender.com/users"
       );
 
       setUsers(response.data);
@@ -49,7 +49,7 @@ function Dashboard() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/users/${id}`
+        `https://full-stack-project-7236.onrender.com/users/${id}`
       );
 
       fetchUsers();
@@ -80,7 +80,7 @@ function Dashboard() {
 
       await axios.put(
 
-        `http://localhost:5000/users/${selectedUser._id}`,
+        `https://full-stack-project-7236.onrender.com/users/${selectedUser._id}`,
 
         {
           name: updatedName,
